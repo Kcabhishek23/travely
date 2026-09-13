@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traveler — Discover Nepal</title>
+  <meta name="description" content="Traveler helps you plan, book, and experience real trekking routes across Nepal with verified local guides." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap: used for the responsive grid + breakpoints only. Colors/components are custom (see style.css) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg tv-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand tv-brand" href="#home">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 20L9 8L13 15L16 9L21 20H3Z" fill="#2F6FED"/>
+          <circle cx="17.5" cy="5.5" r="2.5" fill="#FF7A45"/>
+        </svg>
+        Traveler
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tvNavMenu" aria-controls="tvNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="tvNavMenu">
+        <ul class="navbar-nav mx-auto tv-nav-links">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stories">Traveler Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+        <a href="#contact" class="btn tv-btn-primary tv-nav-cta">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HOME / HERO ============ -->
+  <header id="home" class="tv-hero">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <div class="col-lg-6">
+          <h1 class="tv-headline">Nepal, the way locals see it.</h1>
+          <p class="tv-subtext">
+            Traveler connects you with real trekking routes, verified local guides, and instant bookings —
+            so you spend less time planning spreadsheets and more time on the trail.
+          </p>
+
+          <div class="tv-hero-actions">
+            <a href="#pricing" class="btn tv-btn-primary btn-lg">Get the app</a>
+            <a href="#features" class="btn tv-btn-ghost btn-lg">See how it works</a>
+          </div>
+
+          <div class="tv-hero-stats">
+            <div><strong>12,000+</strong><span>trekkers booked</span></div>
+            <div><strong>4.9</strong><span>average rating</span></div>
+            <div><strong>60+</strong><span>routes across Nepal</span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="tv-hero-visual">
+            <img src="images/hero-phones.png" alt="Traveler app screens showing trip discovery and a Jomsom trip booking page" class="tv-hero-image" />
+            <div class="tv-floating-card">
+              <strong>Jomsom, Mustang</strong>
+              <span>4 days &middot; 4.89 ★</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features" class="tv-section">
+    <div class="container">
+      <div class="tv-section-head">
+        <h2>Everything you need to trek Nepal, in one app</h2>
+        <p>No more scattered blog posts, unanswered messages, or guides you can't verify.</p>
+      </div>
+
+      <div class="tv-feature-row row align-items-center gy-4">
+        <div class="col-lg-6">
+          <div class="tv-feature-visual tv-feature-visual--1">
+            <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 120 L60 50 L90 90 L120 40 L190 120" stroke="#2F6FED" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="60" cy="50" r="7" fill="#FF7A45"/>
+              <circle cx="120" cy="40" r="7" fill="#2F6FED"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="tv-feature-number">01</span>
+          <h3>Find routes that match your pace</h3>
+          <p class="tv-feature-text">
+            Filter treks by difficulty, altitude, and season instead of guessing from photos.
+            Every route on Traveler is mapped from real GPS tracks submitted by past trekkers and local guides.
+          </p>
+          <ul class="tv-feature-list">
+            <li>Difficulty ratings from people who actually walked the trail</li>
+            <li>Real elevation and distance data, not marketing estimates</li>
+            <li>Seasonal warnings for weather and trail closures</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tv-feature-row tv-feature-row--reverse row align-items-center gy-4">
+        <div class="col-lg-6 order-lg-2">
+          <div class="tv-feature-visual tv-feature-visual--2">
+            <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="60" r="34" fill="none" stroke="#2F6FED" stroke-width="6"/>
+              <path d="M84 60 L96 74 L120 44" stroke="#FF7A45" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M50 120 Q100 100 150 120" stroke="#2F6FED" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <span class="tv-feature-number">02</span>
+          <h3>Book guides you can actually trust</h3>
+          <p class="tv-feature-text">
+            Every guide on Traveler is verified against Nepal's official trekking guide license registry.
+            You see their certification, languages spoken, and reviews from previous trips before you pay anything.
+          </p>
+          <ul class="tv-feature-list">
+            <li>License and insurance checked before a guide can list a trip</li>
+            <li>Direct messaging to ask questions before booking</li>
+            <li>Ratings tied to verified completed trips only</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tv-feature-row row align-items-center gy-4">
+        <div class="col-lg-6">
+          <div class="tv-feature-visual tv-feature-visual--3">
+            <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+              <rect x="40" y="30" width="120" height="90" rx="10" fill="none" stroke="#2F6FED" stroke-width="6"/>
+              <line x1="40" y1="55" x2="160" y2="55" stroke="#2F6FED" stroke-width="6"/>
+              <circle cx="70" cy="42" r="4" fill="#FF7A45"/>
+              <circle cx="90" cy="42" r="4" fill="#FF7A45"/>
+              <path d="M65 90 L90 75 L110 95 L135 70" stroke="#2F6FED" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="tv-feature-number">03</span>
+          <h3>One itinerary, not five different apps</h3>
+          <p class="tv-feature-text">
+            Your permits, guide contact, daily route, and payment sit in a single itinerary you can open offline —
+            useful when you're in a valley with no signal for three days.
+          </p>
+          <ul class="tv-feature-list">
+            <li>Offline access to your itinerary and downloaded maps</li>
+            <li>Automatic permit reminders (TIMS, ACAP, and others)</li>
+            <li>One booking record instead of scattered emails</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT US ============ -->
+  <section id="about" class="tv-section tv-section--tinted">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <span class="tv-feature-number">About Us</span>
+          <h2>Built by people who got lost in Mustang first</h2>
+          <p class="tv-feature-text">
+            Traveler started in 2022 after our founders spent two days trying to confirm a guide booking over
+            email for a trek that started the next morning. We built the platform we wished had existed:
+            a direct line between trekkers and licensed local guides, with no middleman agency marking up the price.
+          </p>
+          <p class="tv-feature-text">
+            Today Traveler works with guide cooperatives across Mustang, Annapurna, Langtang, and the Everest region —
+            keeping more of what you pay with the people actually leading your trek.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="tv-about-stats">
+            <div class="tv-about-stat">
+              <strong>2022</strong>
+              <span>Founded in Kathmandu</span>
+            </div>
+            <div class="tv-about-stat">
+              <strong>140+</strong>
+              <span>Licensed local guides</span>
+            </div>
+            <div class="tv-about-stat">
+              <strong>6</strong>
+              <span>Trekking regions covered</span>
+            </div>
+            <div class="tv-about-stat">
+              <strong>92%</strong>
+              <span>Guide earnings kept local</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAVELER STORIES (user stories) ============ -->
+  <section id="stories" class="tv-section">
+    <div class="container">
+      <div class="tv-section-head">
+        <h2>What people are saying after the trek</h2>
+        <p>A few stories from trekkers and guides using Traveler this season.</p>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="tv-story-card tv-story-card--featured">
+            <p class="tv-story-quote">
+              "I booked my Annapurna Circuit guide from my phone two days before flying out, messaged him directly
+              about the weather, and had a downloaded itinerary before I even landed in Kathmandu. It genuinely
+              removed the one part of trekking I used to dread."
+            </p>
+            <div class="tv-story-person">
+              <div class="tv-story-avatar" aria-hidden="true">AS</div>
+              <div>
+                <strong>Anna Schuster</strong>
+                <span>Solo trekker, Germany &middot; Annapurna Circuit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="tv-story-card">
+            <p class="tv-story-quote">
+              "Traveler brings me clients directly, so I keep what I earn instead of splitting it with three agencies."
+            </p>
+            <div class="tv-story-person">
+              <div class="tv-story-avatar" aria-hidden="true">RG</div>
+              <div>
+                <strong>Rajesh Gurung</strong>
+                <span>Licensed guide, Mustang</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv-story-card">
+            <p class="tv-story-quote">
+              "The offline permit reminders saved me — I forgot my ACAP permit was still pending until the app flagged it."
+            </p>
+            <div class="tv-story-person">
+              <div class="tv-story-avatar" aria-hidden="true">MT</div>
+              <div>
+                <strong>Mike Tan</strong>
+                <span>Trekker, Australia &middot; Langtang Valley</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="tv-section tv-section--tinted">
+    <div class="container">
+      <div class="tv-section-head">
+        <h2>Simple pricing, no agency markup</h2>
+        <p>Browsing and messaging guides is always free. You only pay when you book a trip.</p>
+      </div>
+
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="tv-price-card">
+            <h3>Explorer</h3>
+            <p class="tv-price-tag">Free</p>
+            <p class="tv-price-desc">For planning your first trip and comparing routes.</p>
+            <ul class="tv-price-list">
+              <li>Browse all routes and guides</li>
+              <li>Direct messaging with guides</li>
+              <li>Save routes to a wishlist</li>
+            </ul>
+            <a href="#contact" class="btn tv-btn-ghost w-100">Start planning</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="tv-price-card tv-price-card--highlight">
+            <span class="tv-price-badge">Most booked</span>
+            <h3>Trekker</h3>
+            <p class="tv-price-tag">$250 <span>/ trip</span></p>
+            <p class="tv-price-desc">Full guided trip booking with offline itinerary access.</p>
+            <ul class="tv-price-list">
+              <li>Everything in Explorer</li>
+              <li>Verified guide booking &amp; insurance check</li>
+              <li>Offline maps and itinerary</li>
+              <li>Permit reminders (TIMS, ACAP)</li>
+            </ul>
+            <a href="#contact" class="btn tv-btn-primary w-100">Book a trip</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="tv-price-card">
+            <h3>Group &amp; Partner</h3>
+            <p class="tv-price-tag">Custom</p>
+            <p class="tv-price-desc">For groups of 6+ or agencies wanting bulk bookings.</p>
+            <ul class="tv-price-list">
+              <li>Everything in Trekker</li>
+              <li>Group discount pricing</li>
+              <li>Dedicated trip coordinator</li>
+            </ul>
+            <a href="#contact" class="btn tv-btn-ghost w-100">Talk to us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="tv-section">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-5">
+          <span class="tv-feature-number">Contact Us</span>
+          <h2>Planning a trip, or want to list your guiding service?</h2>
+          <p class="tv-feature-text">Reach out and we'll get back to you within a day.</p>
+
+          <div class="tv-contact-info">
+            <div>
+              <strong>Email</strong>
+              <span>hello@traveler-nepal.com</span>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <span>+977 1 456 7890</span>
+            </div>
+            <div>
+              <strong>Office</strong>
+              <span>Thamel, Kathmandu, Nepal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <!-- Static demo form: no backend wired up. For a real submission you'd
+               connect this to a form service (e.g. Formspree) or your own API. -->
+          <form class="tv-contact-form" onsubmit="return false;">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="tv-label" for="tvName">Name</label>
+                <input class="tv-input" type="text" id="tvName" placeholder="Your name" required />
+              </div>
+              <div class="col-md-6">
+                <label class="tv-label" for="tvEmail">Email</label>
+                <input class="tv-input" type="email" id="tvEmail" placeholder="you@example.com" required />
+              </div>
+              <div class="col-12">
+                <label class="tv-label" for="tvMessage">Message</label>
+                <textarea class="tv-input" id="tvMessage" rows="4" placeholder="Tell us about your trip..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn tv-btn-primary btn-lg">Send message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="tv-footer">
+    <div class="container">
+      <div class="tv-footer-top">
+        <a class="tv-brand tv-brand--footer" href="#home">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 20L9 8L13 15L16 9L21 20H3Z" fill="#2F6FED"/>
+            <circle cx="17.5" cy="5.5" r="2.5" fill="#FF7A45"/>
+          </svg>
+          Traveler
+        </a>
+        <ul class="tv-footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#stories">Traveler Stories</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <hr class="tv-footer-rule" />
+      <p class="tv-footer-copy">&copy; 2026 Traveler. Made for trekkers, by trekkers.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
